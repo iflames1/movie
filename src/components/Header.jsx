@@ -2,6 +2,7 @@ import { MdHome } from "react-icons/md";
 import { FaCircleInfo } from "react-icons/fa6";
 import NavItem from "./NavItem";
 import Link from "next/link";
+import Darkmode from "./Darkmode";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
         <NavItem title="about" address="/about" Icon={FaCircleInfo} />
       </div>
       <div className="flex gap-4 items-center">
-        <div>mode</div>
+        <Darkmode />
         <Link href={"/"} className="flex gap-1 items-center">
           <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">
             IMdb
